@@ -1,3 +1,5 @@
+# coding: utf-8
+
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_dotpay_pl_payment'
