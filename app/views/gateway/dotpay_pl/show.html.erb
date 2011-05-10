@@ -36,6 +36,7 @@
     <%= hidden_field_tag 'city', @bill_address.city %>
     <%= hidden_field_tag 'postcode', @bill_address.zipcode %>
     <%= hidden_field_tag 'country', @bill_address.country.iso3 %>
+    <%= hidden_field_tag 'phone', @bill_address.phone %>
     
     <%= hidden_field_tag 'email', (@order.email || @order.user.try(:email)) %>
 
