@@ -23,9 +23,9 @@ class Gateway::DotpayPlController < Spree::BaseController
     @order = Order.find_by_number(params[:format])
     session[:order_id]=nil
     if @order.state=="complete"
-      flash[:order_complete] = I18n.t("payment_success")
+      flash[:payment_success] = I18n.t("payment_success")
     else
-      flash[:order_complete] = I18n.t("payment_error")
+      flash[:payment_failure] = I18n.t("payment_error")
     end
     redirect_to products_url
   end
