@@ -78,13 +78,10 @@ class Gateway::DotpayPlController < Spree::BaseController
   # Completed payment process
   def dotpay_pl_payment_success(params)
     @order.payment.started_processing
-    if @order.total.to_f == params[:amount].to_f      
-      @order.payment.complete     
-    end    
-    
-    @order.finalize!
-    
-    @order.next
+    if @order.total.to_f == params[:amount].to_f
+      @order.payment.complete
+    end
+
     @order.next
   end
 
