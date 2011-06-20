@@ -86,7 +86,6 @@ class Gateway::DotpayPlController < Spree::BaseController
     
     @order.next
     @order.next
-    @order.save
   end
 
   # payment cancelled by user (dotpay signals 3 to 5)
