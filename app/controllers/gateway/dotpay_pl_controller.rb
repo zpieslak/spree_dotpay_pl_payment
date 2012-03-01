@@ -20,9 +20,9 @@ class Gateway::DotpayPlController < Spree::BaseController
   
   # redirecting from dotpay.pl
   def complete
-    @order = Order.find_by_number(params[:format])
-    session[:order_id]=nil
-    if @order.state=="complete"
+    @order = Order.find_by_number(params[:order_number])
+    session[:order_id] = nil
+    if @order.state == "complete"
       flash[:payment_success] = I18n.t("payment_success")
     else
       flash[:payment_failure] = I18n.t("payment_error")
