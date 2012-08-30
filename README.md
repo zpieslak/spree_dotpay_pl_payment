@@ -1,18 +1,22 @@
 SpreeDotpayPlPayment
 ====================
 
-Dotpay.pl payment system for Spree (>= 0.30)
+Dotpay.pl payment system for Spree
+
+It should be working with spree >= 1.10 and Rails >= 3.2
 
 Install
 =======
 
 Add to your Gemfile:
 
-    gem 'spree_dotpay_pl_payment', :git => 'git://github.com/espresse/spree_dotpay_pl_payment.git'
+  gem 'spree_dotpay_pl_payment', :git => 'git://github.com/zpieslak/spree_dotpay_pl_payment.git'
 
-and run 
+and run
 
-    bundle install
+  bundle install
 
-This work based on https://github.com/pronix/spree-ebsin. Thanks a lot!
- 
+Based on:
+
+https://github.com/espresse/spree_dotpay_pl_payment
+https://github.com/MettaAudio/spree-pp-website-standard

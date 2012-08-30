@@ -1,6 +1,7 @@
 ---
 pl:
   payment_success: Płatność poprawna
+  payment_error: Wystąpił błąd płatności
   currency: Waluta
   account_id: ID konta
   dotpay_pl_payment: Zapłać w Dotpay
