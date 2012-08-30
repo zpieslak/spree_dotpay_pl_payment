@@ -4,7 +4,6 @@ module Spree
     preference :account_id, :string
     preference :pin, :string
     preference :url, :string, :default => "https://ssl.dotpay.pl/"
-    preference :urlc, :string, :default => "https://example.com/gateway/dotpay_pl/comeback/"
     preference :type, :string, :default => "0"
     preference :currency, :string, :default => "PLN"
     preference :language, :string, :default => "pl"
