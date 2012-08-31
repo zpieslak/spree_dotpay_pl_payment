@@ -3,7 +3,7 @@ SpreeDotpayPlPayment
 
 Dotpay.pl payment system for Spree
 
-It should be working with spree >= 1.10 and Rails >= 3.2
+It should be working with spree >= 1.1.0 and Rails >= 3.2
 
 Install
 =======
@@ -19,5 +19,4 @@ and run
 Based on:
 
 https://github.com/espresse/spree_dotpay_pl_payment
-
 https://github.com/MettaAudio/spree-pp-website-standard
