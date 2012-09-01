@@ -78,11 +78,9 @@ module Spree
       # Completed payment process
       def dotpay_pl_payment_success(params)
         @order.payment.started_processing
-        if @order.total.to_f == params[:amount].to_f
-          @order.payment.complete
-        end
-
-        @order.next
+        @order.payment.complete
+        @order.update_attribute(:state, "complete")
+        @order.finalize!
       end
 
       # payment cancelled by user (dotpay signals 3 to 5)
@@ -92,7 +90,6 @@ module Spree
 
       def dotpay_pl_payment_new(params)
         @order.payment.started_processing
-        @order.finalize!
       end
   end
 end
